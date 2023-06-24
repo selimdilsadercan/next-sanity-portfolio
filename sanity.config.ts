@@ -6,7 +6,7 @@ import { apiVersion, dataset, projectId } from "@/sanity/env";
 import { schema } from "@/sanity/schema";
 
 export default defineConfig({
-  basePath: "/studio", //admin de yapılabilir
+  basePath: "/admin", //studio da yapılabilir
   projectId,
   dataset,
   plugins: [deskTool(), visionTool({ defaultApiVersion: apiVersion })],

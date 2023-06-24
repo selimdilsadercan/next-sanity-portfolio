@@ -12,7 +12,7 @@ const page: FC<pageProps> = async ({ params }) => {
   const project = await getProject(slug);
 
   return (
-    <div className="max-w-3xl py-20 mx-auto">
+    <div>
       <header className="flex justify-between">
         <h1 className="text-4xl font-extrabold text-transparent drop-shadow bg-clip-text bg-gradient-to-r from-orange-400 via-red-500 to-purple-600">
           {project.name}
