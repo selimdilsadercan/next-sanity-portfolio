@@ -1,14 +1,16 @@
-import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
+import schemas from "./sanity/schemas";
+import { visionTool } from "@sanity/vision";
 
-import { apiVersion, dataset, projectId } from "@/sanity/env";
-import { schema } from "@/sanity/schemas";
-
-export default defineConfig({
-  basePath: "/admin", //studio da yapılabilir
-  projectId,
-  dataset,
-  plugins: [deskTool(), visionTool({ defaultApiVersion: apiVersion })],
-  schema,
+const config = defineConfig({
+  projectId: "txd29ab2",
+  dataset: "production",
+  title: "My Personal Website",
+  apiVersion: "2023-03-09",
+  basePath: "/admin",
+  plugins: [deskTool(), visionTool({ defaultApiVersion: "2023-03-09" })],
+  schema: { types: schemas },
 });
+
+export default config;
