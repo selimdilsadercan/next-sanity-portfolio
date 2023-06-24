@@ -22,7 +22,7 @@ export default async function RootLayout({
             href="/"
             className="text-lg font-bold text-transparent bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text"
           >
-            Kapehe
+            Selim Dilşad Ercan
           </Link>
           <div className="flex items-center gap-5 text-sm text-gray-600">
             {pages.map((page) => (
